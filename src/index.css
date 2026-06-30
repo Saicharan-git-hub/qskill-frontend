@@ -1,1 +1,98 @@
-@import "tailwindcss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top left, #5f0a87, #2d1b69, #0f172a);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+textarea,
+input,
+select {
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 950px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+.gradient-btn {
+  background: linear-gradient(135deg, #2563eb, #a855f7);
+  color: white;
+  font-weight: 600;
+  padding: 14px 20px;
+  border-radius: 14px;
+}
+
+.gradient-btn:hover {
+  opacity: 0.9;
+}
+
+.output-box {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.85),
+    rgba(219, 234, 254, 0.8)
+  );
+  color: #111827;
+  border-radius: 18px;
+  padding: 20px;
+  min-height: 140px;
+}
+
+.navbar-link {
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.navbar-link:hover {
+  color: #facc15;
+}
